@@ -5,7 +5,7 @@ from sys import exit
 from random import *
 
 # Inicializar as funções na biblioteca pygame
-pygame.init()
+pygame.init() 
 
 # musicas/ som do jogo
 pygame.mixer.music.set_volume(0.1)
@@ -71,7 +71,7 @@ def cresce_cobra(lista_corpo):
 
 # Função que define as ações caso o jogador perca
 def reiniciar_jogo():
-    global pontos, comprimento_inicial, x_cobra, y_cobra, lista_corpo, lista_cabeça, x_rato, y_rato, gameover
+    global pontos, comprimento_inicial, x_cobra, y_cobra, lista_corpo, lista_cabeça, x_rato, y_rato, velocidade, frames, gameover
     pontos = 0
     comprimento_inicial = 3
     x_cobra = int(largura / 2 - c_cobra)  # posição x da cobra
@@ -80,6 +80,8 @@ def reiniciar_jogo():
     lista_cabeça = list()
     x_rato = randint(20, 620)
     y_rato = randint(20, 460)
+    velocidade = 5
+    frames = 20
     gameover = False
 
 
