@@ -4,6 +4,8 @@ from pygame.locals import *
 from sys import exit
 from random import *
 
+
+
 # Inicializar as funções na biblioteca pygame
 pygame.init() 
 
@@ -128,10 +130,10 @@ while True:
     y_cobra += y_controle
 
     # Criação do design da cobrinha
-    cobra = pygame.draw.rect(tela, (0, 255, 0), (x_cobra, y_cobra, c_cobra, a_cobra))
+    cobra = pygame.draw.rect(tela, (255, 0, 0), (x_cobra, y_cobra, c_cobra, a_cobra))
 
     # Criação do design do rato
-    rato = pygame.draw.rect(tela, (0, 0, 125), (x_rato, y_rato, c_rato, a_rato))
+    rato = pygame.draw.rect(tela, (255, 255, 0), (x_rato, y_rato, c_rato, a_rato))
 
     # Condição de colisão entre cobra e rato
     if cobra.colliderect(rato):
