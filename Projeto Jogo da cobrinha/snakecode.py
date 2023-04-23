@@ -14,14 +14,6 @@ pygame.mixer.music.play(-1)
 som_colisão = pygame.mixer.Sound('smw_fireball.wav')
 som_colisão.set_volume(1)
 
-# Sorteio da posição do rato
-listax = list()
-listay = list()
-for c in range(20,620,20):
-    listax.append(c)
-for c in range(20,460,20):
-    listay.append(c)
-
 # Definição das variáveis
 
 # Tamanho da tela
